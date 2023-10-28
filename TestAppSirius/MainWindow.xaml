@@ -1,0 +1,21 @@
+﻿<Window x:Class="TestAppSirius.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestAppSirius"
+        mc:Ignorable="d"
+        Title="Shapes" Height="750" Width="1500" WindowState="Maximized">
+    <Grid>
+        <ToolBarTray Background="White">
+            <ToolBar Band="1" BandIndex="1" Height="50" Width="1600" VerticalAlignment="Top">
+                <Button x:Name="btnAddShape" Width="100" Height="40" Margin="20,0" FontFamily="Times New Roman" FontSize="16"
+                        Click="btnAddShape_Click">Add shape</Button>
+                <Button x:Name="btnDelete" Width="100" Height="40" Margin="20,0" FontFamily="Times New Roman" FontSize="16" IsEnabled="False"
+                        Click="btnDelete_Click">Delete</Button>
+            </ToolBar>
+        </ToolBarTray>
+            <Canvas x:Name="MainCanvas" Height="660" Width="1500" VerticalAlignment="Bottom" Background="White" Focusable="True"
+                    MouseLeftButtonDown="MainCanvas_MouseLeftButtonDown"/>
+    </Grid>
+</Window>
